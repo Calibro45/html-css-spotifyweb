@@ -42,7 +42,6 @@ main {
 
 /* side bar */
 
-
 aside {
     border: 2px solid salmon;
     background-color: #000;
@@ -82,4 +81,38 @@ section > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 10px;
 }
+
+#tool-bar .theme__wrapper {
+    gap: 10px;
+    align-items: center;
+    color: #6b6b6b;
+}
+
+.theme__wrapper .theme-info {
+    gap: 10px;
+    align-items: center;
+}
+
+.theme__wrapper .theme-info .theme-img {
+    max-width: 50px;
+}
+
+.theme-info .theme-img img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.theme-info .theme-title .theme-name {
+    font-size: 14px;
+    color: #fff;
+}
+
+.theme-info .theme-title .autor {
+    font-size: 11px;
+}
+
+
+
+
