@@ -75,13 +75,12 @@ section > div {
 #tool-bar {
     border: 2px solid blue;
     background-color: #282828;
-    min-height: 90px;
     position: sticky;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 10px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 #tool-bar .theme__wrapper {
@@ -111,6 +110,19 @@ section > div {
 
 .theme-info .theme-title .autor {
     font-size: 11px;
+}
+
+.reproduction-tool__wrap .theme-bar {
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.reproduction-tool__wrap .theme-bar .play-icon {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
