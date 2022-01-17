@@ -205,6 +205,7 @@ section > div {
 
 #tool-bar .time-bar__wrap:hover .time-bar {
     background-color: #baf45d;
+    animation: timeball 10s linear ;
 }
 
 #tool-bar .time-bar__wrap:hover .time-ball {
@@ -220,4 +221,38 @@ section > div {
 
 
 
+
+
+
+
+
+/****** Animation ******/
+
+@keyframes timeball {
+
+    0% {
+        max-width: 25%;
+    }
+
+    25% {
+        max-width: 35%;
+    }
+
+    50% {
+        max-width: 50%;
+    }
+
+    75% {
+        max-width: 75%;
+    }
+
+    100% {
+        max-width: 100%;
+    }
+
+}
+
+
+
+/********** Media Query **********/
 
