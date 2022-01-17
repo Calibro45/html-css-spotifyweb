@@ -14,11 +14,22 @@ body {
 
 main {
     border: 2px solid blue;
-    min-height: 250px;
     flex-grow: 1;
+    display: flex;
 }
 
 footer {
-    border: 2px solid lightgreen;
+    border: 2px solid blue;
     min-height: 90px;
+    position: sticky;
+}
+
+aside {
+    border: 2px solid salmon;
+    width: 225px;
+}
+
+section {
+    border: 2px solid salmon;
+    flex-grow: 1;
 }
