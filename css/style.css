@@ -81,6 +81,7 @@ section > div {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    white-space: nowrap;
 }
 
 #tool-bar .theme__wrapper {
@@ -112,6 +113,11 @@ section > div {
     font-size: 11px;
 }
 
+#tool-bar .reproduction-tool__wrap {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
 .reproduction-tool__wrap .theme-bar {
     justify-content: center;
     gap: 20px;
@@ -123,6 +129,19 @@ section > div {
     font-size: 30px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.reproduction-tool__wrap .theme-time{
+    font-size: 12px;
+    gap: 20px;
+    align-items: center;
+}
+
+.reproduction-tool__wrap .theme-time .time-bar__wrap {
+    flex-grow: 1;
+    background-color: #5a5a5a;
+    height: 5px;
+    border-radius: 10px;
 }
 
 
