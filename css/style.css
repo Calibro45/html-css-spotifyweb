@@ -102,6 +102,7 @@ section > div {
 .theme-info .theme-img img {
     object-fit: contain;
     object-position: center;
+    width: 50px;
 }
 
 .theme-info .theme-title .theme-name {
@@ -114,8 +115,7 @@ section > div {
 }
 
 #tool-bar .reproduction-tool__wrap {
-    flex-grow: 1;
-    max-width: 50%;
+    flex-basis: 600px;
 }
 
 .reproduction-tool__wrap .theme-bar {
@@ -123,6 +123,7 @@ section > div {
     gap: 20px;
     font-size: 18px;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .reproduction-tool__wrap .theme-bar .play-icon {
@@ -135,13 +136,36 @@ section > div {
     font-size: 12px;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
-.reproduction-tool__wrap .theme-time .time-bar__wrap {
-    flex-grow: 1;
+#tool-bar .time-bar__wrap {
     background-color: #5a5a5a;
     height: 5px;
     border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#tool-bar .time-bar__wrap.lg {
+    flex-basis: 400px;
+}
+
+#tool-bar .time-bar__wrap.sm {
+    flex-basis: 100px;
+}
+
+#tool-bar .time-bar {
+    height: 5px;
+    background-color: #c1c1c1;
+    max-width: 25%;
+    border-radius: 10px;
+}    
+
+#tool-bar .theme-option {
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    flex-basis: 250px;
 }
 
 
