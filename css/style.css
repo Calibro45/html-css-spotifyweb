@@ -12,6 +12,14 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
 body {
     height: 100vh;
     width: 100%;
@@ -26,7 +34,7 @@ main {
     display: flex;
 }
 
-footer {
+#tool-bar {
     border: 2px solid blue;
     background-color: #282828;
     min-height: 90px;
