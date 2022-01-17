@@ -84,18 +84,18 @@ section > div {
     bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
-    white-space: nowrap;
+    gap: 15px;
 }
 
 #tool-bar .theme__wrapper {
     gap: 10px;
     align-items: center;
     color: #6b6b6b;
+    flex-basis: 30%;
 }
 
-#tool-bar .theme__wrapper li i:hover {
+#tool-bar .theme__wrapper .theme-icon i:hover {
     color: #fff;
     cursor: pointer;
 }
@@ -115,6 +115,11 @@ section > div {
     width: 50px;
 }
 
+.theme-info .theme-title {
+    display: flex;
+    flex-direction: column;
+}
+
 .theme-info .theme-title .theme-name {
     font-size: 14px;
     color: #fff;
@@ -130,8 +135,12 @@ section > div {
     color: #fff;
 }
 
+#tool-bar .theme__wrapper .theme-icon {
+    gap: 15px;
+}
+
 #tool-bar .reproduction-tool__wrap {
-    flex-basis: 600px;
+    flex-grow: 1;
 }
 
 #tool-bar .reproduction-tool__wrap i:hover,
@@ -172,11 +181,11 @@ section > div {
 }
 
 #tool-bar .time-bar__wrap.lg {
-    flex-basis: 400px;
+    flex-grow: 1;
 }
 
 #tool-bar .time-bar__wrap.sm {
-    flex-basis: 100px;
+    flex-basis: 25%;
 }
 
 #tool-bar .time-bar {
@@ -216,7 +225,7 @@ section > div {
     justify-content: flex-end;
     gap: 15px;
     align-items: center;
-    flex-basis: 250px;
+    flex-basis: 30%;
 }
 
 
@@ -255,4 +264,12 @@ section > div {
 
 
 /********** Media Query **********/
+
+@media screen and (max-width: 552px) {
+
+    #tool-bar .theme__wrapper .theme-icon {
+        flex-direction: column;
+    }
+
+}
 
