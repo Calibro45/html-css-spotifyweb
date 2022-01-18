@@ -44,7 +44,22 @@ a {
     display: flex;
 }
 
-/* navbar */
+.active {
+    color: #fff;
+    position:relative
+}
+
+.active::after {
+    content: "";
+    display: block;
+    height: 35px;
+    width: 5px;
+    background-color: #baf45d;
+    position: absolute;
+    left: -15px;
+}
+
+/* navbar header */
 
 #navbar {
     background-color: #000;
@@ -81,6 +96,11 @@ a {
     width: 30px;
 }
 
+.widget-menu .widget__item li:hover {
+    cursor: pointer;
+    color:#fff
+}
+
 /* navbar body */
 
 .playlist .playlist-title {
@@ -104,6 +124,11 @@ a {
     font-size: 36px;
 }
 
+.playlist .playlist__wrap li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 /* navbar footer */
 
 #navbar .profile {
@@ -116,6 +141,7 @@ a {
     margin-bottom: 20px;
     border-bottom: 1px solid #717171;
     padding: 10px 0;
+    align-items: flex-start;
 }
 
 .profile .download-app .download-icon {
@@ -142,6 +168,10 @@ a {
 
 .profile .user .user-name {
     font-size: 16px;
+    color: #fff;
+}
+
+.profile .download-app .download-link:hover {
     color: #fff;
 }
 
