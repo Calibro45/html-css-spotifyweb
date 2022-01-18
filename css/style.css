@@ -43,7 +43,7 @@ a {
     display: flex;
 }
 
-/* side bar */
+/* navbar */
 
 #navbar {
     border: 2px solid salmon;
@@ -63,6 +63,10 @@ a {
     margin-bottom: 20px;
 }
 
+#navbar .main-nav .widget-menu {
+    margin-bottom: 20px;
+}
+
 .main-nav .widget-menu .widget-wrap {
     align-items: center;
     gap: 10px;
@@ -74,7 +78,33 @@ a {
     width: 30px;
 }
 
-/* playlist */
+/* navbar body */
+
+.playlist .playlist-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.playlist .playlist__wrap li {
+    margin-bottom: 15px;
+}
+
+.playlist .playlist__wrap .add-playlist {
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.playlist .playlist__wrap .add-playlist i {
+    font-size: 36px;
+}
+
+
+
+
+/* Albums */
 
 section {
     flex-grow: 1;
