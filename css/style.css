@@ -26,6 +26,7 @@ main {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 ul, ol {
@@ -46,10 +47,10 @@ a {
 /* navbar */
 
 #navbar {
-    border: 2px solid salmon;
     background-color: #000;
     width: 230px;
     flex-shrink: 0;
+    position: relative;
 }
 
 #navbar .main-nav {
@@ -101,6 +102,45 @@ a {
     font-size: 36px;
 }
 
+/* navbar footer */
+
+.main-nav .profile {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.main-nav .profile .download-app {
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.profile .download-app .download-icon {
+    width: 20px;
+}
+
+.main-nav .profile .user {
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .user .profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .user .user-name {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+
 
 
 
@@ -131,7 +171,7 @@ section {
     bottom: 0;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 5px 10px;
     gap: 100px;
     justify-content: space-between;
 }
