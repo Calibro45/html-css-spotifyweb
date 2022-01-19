@@ -314,6 +314,44 @@ button {
     border: 2px solid lightskyblue;
 }
 
+.album__card .card-header {
+    position: relative;
+}
+
+.album__card .card-header .album-photo {
+    display: block;
+}
+
+.album__card .card-header .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.card-header .overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+}
+
+.album__card .card-header:hover {
+    cursor: pointer;
+}
+
+.album__card .card-header:hover .overlay {
+    visibility: visible;
+}
+
+
+
+
+
 
 
 
