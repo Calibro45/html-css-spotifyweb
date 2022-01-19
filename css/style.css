@@ -232,7 +232,7 @@ button {
 /* Albums */
 
 #main-content {
-    flex-grow: 1;
+    flex-basis: calc(100% - 230px);
     background-color: #141922;
     position: relative;
     overflow-y: scroll;
@@ -310,7 +310,7 @@ button {
 
 .album-card__wrapper .album__card {
     min-height: 280px;
-    width: 15%;
+    flex-basis: 15%;
     border: 2px solid lightskyblue;
 }
 
@@ -380,19 +380,6 @@ button {
     border-radius: 50%;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* tool bar */
 
