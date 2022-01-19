@@ -39,6 +39,11 @@ a {
     color: currentColor;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 /* utilities */
 
 .flex {
@@ -221,18 +226,35 @@ a {
     overflow-y: scroll;
 }
 
+/* bottone upgrade */
+
 .upgrade {
-    border: 2px solid lightskyblue;
     background-color: rgba(0,0,0,0.3);
     position: absolute;
     height: 90px;
     top: 0;
     right: 0;
     width: 100%;
+    padding: 15px;
+    text-align: right;
+}
+
+.upgrade .upgrade-cta {
+    padding: 10px 35px;
+    border-radius: 9999px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.upgrade .upgrade-cta:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .album {
-    border: 2px solid lightskyblue;
     padding-top: 120px;
     height: 100%;
 }
