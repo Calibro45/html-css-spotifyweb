@@ -363,11 +363,18 @@ button {
     margin-bottom: 10px;
 }
 
-.album__card .card-body .album-subtitle {
+.album__card .card-body .album-subtitle,
+.album__wrap .album__wrap-subtitle {
     font-size: 14px;
     color: #76787d;
     font-weight: 700;
 }
+
+.album__wrap .album__wrap-subtitle {
+    margin-bottom: 30px;
+}
+
+
 
 
 
