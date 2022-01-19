@@ -55,6 +55,10 @@ button {
     position:relative
 }
 
+.active.hor {
+    color: #55585d;
+}
+
 .active::after {
     content: "";
     display: block;
@@ -64,6 +68,14 @@ button {
     position: absolute;
     left: -15px;
 }
+
+.active.hor::after {
+    width: 2px;
+    margin-top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
 
 /* navbar header */
 
@@ -253,6 +265,27 @@ button {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/* album section */
+
+.album .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #55585d;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 25px;
+}
+
+.album .categories .categories-list:hover {
+    color: #fff;
+}
+
+/* music album */
 
 .album {
     padding-top: 120px;
