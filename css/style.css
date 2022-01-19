@@ -279,6 +279,7 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     padding: 0 25px;
+    margin-bottom: 35px;
 }
 
 .album .categories .categories-list:hover {
@@ -290,6 +291,27 @@ button {
 .album {
     padding-top: 120px;
     height: 100%;
+}
+
+.album .album__wrap {
+    padding: 5px 20px;
+}
+
+.album__wrap .album__wrap-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.album__wrap .album-card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album-card__wrapper .album__card {
+    min-height: 280px;
+    width: 16%;
+    border: 2px solid lightskyblue;
 }
 
 
