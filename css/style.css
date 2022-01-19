@@ -298,7 +298,7 @@ button {
 }
 
 .album__wrap .album__wrap-title {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 25px;
 }
 
@@ -314,8 +314,11 @@ button {
     border: 2px solid lightskyblue;
 }
 
+/* album card */
+
 .album__card .card-header {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .album__card .card-header .album-photo {
@@ -340,13 +343,33 @@ button {
     font-size: 60px;
 }
 
-.album__card .card-header:hover {
+.album__card .card-header:hover,
+.album__card .card-body .album-title,
+.album__card .card-body .album-subtitle {
     cursor: pointer;
 }
 
 .album__card .card-header:hover .overlay {
     visibility: visible;
 }
+
+.album__card .card-body {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.album__card .card-body .album-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.album__card .card-body .album-subtitle {
+    font-size: 14px;
+    color: #76787d;
+    font-weight: 700;
+}
+
+
 
 
 
