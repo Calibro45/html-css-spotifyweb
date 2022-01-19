@@ -299,18 +299,18 @@ button {
 
 .album__wrap .album__wrap-title {
     font-size: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .album__wrap .album-card__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .album-card__wrapper .album__card {
     min-height: 280px;
-    width: 16%;
+    width: 15%;
     border: 2px solid lightskyblue;
 }
 
@@ -372,6 +372,13 @@ button {
 
 .album__wrap .album__wrap-subtitle {
     margin-bottom: 30px;
+}
+
+/* card variant */
+
+.album__card .card-header.circle {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
