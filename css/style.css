@@ -573,33 +573,18 @@ button {
 
 /********** Media Query **********/
 
-@media screen and (min-width:375px) and (max-width: 552px)  {
-
-    #tool-bar .theme__wrapper {
-        gap: 30px;
-    }    
-
+@media screen and (min-width:375px) and (max-width: 430px) {
+    
     .theme-info .theme-title {
         display: none;
     }
-
-    .reproduction-tool__wrap .theme-bar {
-        gap: 10px;
-        font-size: 12px;
-    }
-
-    .reproduction-tool__wrap .theme-bar .play-icon {
-        font-size: 26px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .reproduction-tool__wrap .theme-time {
-        font-size: 10px;
-        gap: 5px;
-    }
+    
+    #tool-bar .theme__wrapper {
+        gap: 30px;
+    }  
 
 }
+
 
 @media screen and (max-width: 552px) {
 
@@ -668,7 +653,7 @@ button {
     /* tool bar */
 
     #tool-bar {
-        gap: 10px;
+        gap: 15px;
     }
 
     #tool-bar .theme__wrapper {
@@ -688,6 +673,22 @@ button {
 
     #tool-bar .theme__wrapper .theme-icon {
         flex-direction: column;
+    }
+
+    .reproduction-tool__wrap .theme-bar {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .reproduction-tool__wrap .theme-bar .play-icon {
+        font-size: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reproduction-tool__wrap .theme-time {
+        font-size: 10px;
+        gap: 5px;
     }
 
 }
