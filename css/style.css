@@ -301,7 +301,7 @@ button {
 /* music album */
 
 .album {
-    padding-top: 120px;
+    padding-top: 30px;
     height: 100%;
 }
 
@@ -318,11 +318,11 @@ button {
 .album__wrap .album-card__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1%;
 }
 
 .album-card__wrapper .album__card {
-    flex-basis: 15%;
+    width: calc(95% / 6);
 }
 
 /* album card */
@@ -351,7 +351,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 60px;
+    font-size: min(70px,4vw);
 }
 
 .album__card .card-header:hover,
@@ -615,10 +615,6 @@ button {
         flex-basis: calc(100% - 70px);
     }
 
-    .album-card__wrapper .album__card {
-        flex-basis: 47%;
-    }
-
     /* tool bar */
 
     #tool-bar {
@@ -635,9 +631,6 @@ button {
 
     /* album */
 
-    .album-card__wrapper .album__card {
-        flex-basis: 47%;
-    }
 
     /* tool bar */
 
