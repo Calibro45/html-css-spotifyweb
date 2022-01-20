@@ -127,6 +127,7 @@ button {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    position: relative;
 
 }
 
@@ -134,9 +135,19 @@ button {
     width: 30px;
 }
 
-.widget-menu .widget__item li:hover {
+.widget-menu .widget__item .widget-wrap:hover {
     cursor: pointer;
     color:#fff
+}
+
+.widget-menu .widget__item .widget-wrap:hover::after {
+    content: "";
+    display: block;
+    height: 35px;
+    width: 5px;
+    background-color: #baf45d;
+    position: absolute;
+    left: -15px;
 }
 
 /* navbar body */
@@ -295,8 +306,24 @@ button {
     margin-bottom: 35px;
 }
 
+.album .categories .categories-list {
+    position: relative;
+}
+
 .album .categories .categories-list:hover {
     color: #fff;
+}
+
+.album .categories .categories-list:hover::after {
+    content: "";
+    display: block;
+    background-color: #baf45d;
+    width: 2px;
+    height: 35px;
+    margin-top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
 }
 
 /* music album */
@@ -352,7 +379,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: min(70px,10vw);
+    font-size: min(70px,10vw);   
 }
 
 .album__card .card-header:hover,
@@ -363,6 +390,7 @@ button {
 
 .album__card .card-header:hover .overlay {
     visibility: visible;
+    animation: opacizza 400ms ease-in-out;
 }
 
 .album__card .card-body {
@@ -572,6 +600,29 @@ button {
 
 }
 
+@keyframes opacizza {
+
+    0% {
+        opacity: 0.3;
+    }
+
+    25% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
 /********** Media Query **********/
 
 @media screen and (min-width:375px) and (max-width: 430px) {
@@ -752,6 +803,11 @@ button {
         font-size: 11px;;
     }
 
+    
+    .card-header .overlay i {
+        font-size: min(70px,6vw);
+    }
+
     /* tool bar */
 
     #tool-bar {
@@ -778,6 +834,10 @@ button {
     
     .album__card .card-body .album-subtitle {
         font-size: 11px;;
+    }
+
+    .card-header .overlay i {
+        font-size: min(70px,6vw);
     }
 
 }
