@@ -836,15 +836,11 @@ button {
         font-size: 11px;;
     }
 
-    .card-header .overlay i {
-        font-size: min(70px,6vw);
-    }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-    .album:nth-child(2) .album-card__wrapper .album__card:last-child {
+    .album-card__wrapper.ghost .album__card:last-child {
         display: none;
     }
 
