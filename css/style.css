@@ -285,6 +285,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    row-gap: 35px;
     flex-wrap: wrap;
     font-size: 14px;
     color: #55585d;
@@ -351,7 +352,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: min(70px,4vw);
+    font-size: min(70px,10vw);
 }
 
 .album__card .card-header:hover,
@@ -370,7 +371,7 @@ button {
 }
 
 .album__card .card-body .album-title {
-    font-size: 14px;
+    font-size: min(14px,4vw);
     margin-bottom: 10px;
 }
 
@@ -574,6 +575,8 @@ button {
 /********** Media Query **********/
 
 @media screen and (min-width:375px) and (max-width: 430px) {
+
+    /* toolbar */
     
     .theme-info .theme-title {
         display: none;
@@ -650,6 +653,7 @@ button {
         font-size: 11px;;
     }
 
+
     /* tool bar */
 
     #tool-bar {
@@ -697,6 +701,23 @@ button {
 
     /* album */
 
+    .album__wrap .album-card__wrapper {
+        gap: 4%;
+        row-gap: 20px;
+    }
+    
+    .album-card__wrapper .album__card {
+        width: calc(96% / 2);
+    }
+
+    .album__card .card-body .album-title {
+        font-size: 12px;
+    }
+    
+    .album__card .card-body .album-subtitle {
+        font-size: 11px;;
+    }
+
 
     /* tool bar */
 
@@ -713,10 +734,66 @@ button {
 
 @media screen and (min-width: 639px) and (max-width: 878px) {
 
+    /* album */
+
+    .album__wrap .album-card__wrapper {
+        row-gap: 20px;
+    }
+    
+    .album-card__wrapper .album__card {
+        width: calc(97% / 4);
+    }
+
+    .album__card .card-body .album-title {
+        font-size: 12px;
+    }
+    
+    .album__card .card-body .album-subtitle {
+        font-size: 11px;;
+    }
+
     /* tool bar */
 
     #tool-bar {
         gap: 20px;
     }
     
+}
+
+@media screen and (min-width: 878px) and (max-width: 992px) {
+
+    /* album */
+
+    .album__wrap .album-card__wrapper {
+        row-gap: 20px;
+    }
+    
+    .album-card__wrapper .album__card {
+        width: calc(96% / 5);
+    }
+
+    .album__card .card-body .album-title {
+        font-size: 12px;
+    }
+    
+    .album__card .card-body .album-subtitle {
+        font-size: 11px;;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .album:nth-child(2) .album-card__wrapper .album__card:last-child {
+        display: none;
+    }
+
+    .album__wrap .album-card__wrapper {
+        row-gap: 20px;
+    }
+    
+    .album-card__wrapper .album__card {
+        width: calc(96% / 5);
+    }
+
 }
